@@ -1,8 +1,14 @@
 import React from 'react'
+import ProjectsComponent from '../components/ProjectsComponent'
+
+import NavProject from '../components/NavProject'
 
 function ProjectPage() {
   return (
-    <div>ProjectPage</div>
+    <div>
+      <NavProject />
+      <ProjectsComponent />
+    </div>
   )
 }
 

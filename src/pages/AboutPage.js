@@ -1,15 +1,18 @@
-import React from 'react'
+import React from "react";
 
+import AboutComponent from "../components/AboutComponent.js";
+import Experties from "../components/Experties";
+import NavAbout from "../components/NavAbout";
 function AboutPage() {
   return (
     <div>
-        <div>
-            <span>ABOUT US</span>
-            <p>A suprisingly ambitious architectural design firm with energetic 
-              architecture and designers merged their experience to found Mz-architects in the capital city of ethiopia. <br /> We have the passion for creating designs that tell their story.</p>
-        </div>
+      <div>
+        <NavAbout />
+        <AboutComponent />
+        <Experties />
+      </div>
     </div>
-  )
+  );
 }
 
-export default AboutPage
+export default AboutPage;

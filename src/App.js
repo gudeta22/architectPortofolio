@@ -1,11 +1,12 @@
 import './App.css';
-import {Route , Routes , Link} from 'react-router-dom'
+import {Route , Routes} from 'react-router-dom'
 import Home from '../src/pages/HomePage'
 import Contact from '../src/pages/Contact'
 import AboutPage from '../src/pages/AboutPage'
 import Projects from '../src/pages/ProjectPage'
 import Service from '../src/pages/ServicePage'
-import Navbar from './components/Navbar.js';
+import Navbar from './components/Navbar.jsx';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Route path='/projects' element={<Projects />} />
       <Route path = '/contact' element={<Contact />} />
     </Routes>
+    <Footer />
      
     </> 
   );
