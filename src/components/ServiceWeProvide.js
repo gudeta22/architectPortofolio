@@ -12,14 +12,14 @@ function ServiceWeProvide({index}) {
     {
       id: 1,
       src: Archi,
-      title: "ARCHITECTURE",
-      description: `Sorem spsum dolor sit amsectetr adipisclit, seddo eiusmod tempr incididunt laborea.`,
+      title: "ARCHITECTURAL DESIGN",
+      description: `As an experienced provider of design Services, our designers translate architectural ideas into forms`,
     },
     {
       id: 2,
       src: Interior,
       title: "INTERIOR DESIGN",
-      description: `Sorem spsum dolor sit amsectetr adipisclit, seddo eiusmod tempr incididunt laborea.`,
+      description: `We make interior spaces more functional, safe, and beautiful for almost every type of building interior, by selecting essential and decorative materials.`,
     },
     {
       id: 3,
@@ -30,34 +30,28 @@ function ServiceWeProvide({index}) {
       {
       id: 4,
       src: Interior,
-      title: "SUPERVISION SERVICE",
+      title: "REMODEL & ADDITION",
       description: `Sorem spsum dolor sit amsectetr adipisclit, seddo eiusmod tempr incididunt laborea.`,
     },
       {
       id: 5,
       src: drawing,
       title: "LANDSCAPE DESIGN",
-      description: `Sorem spsum dolor sit amsectetr adipisclit, seddo eiusmod tempr incididunt laborea.`,
+      description: `we design your outdoor experience, with custom styling for your unique property.`,
     },
       {
       id: 6,
       src: permit,
       title: "PERMIT PREPARATION",
-      description: `Sorem spsum dolor sit amsectetr adipisclit, seddo eiusmod tempr incididunt laborea.`,
+      description: `We help you obtain your building permit by providing detailed working drawings and specifications.`,
     },
 
      {
       id: 7,
       src: modeling,
-      title: "3D MODELING",
-      description: `Sorem spsum dolor sit amsectetr adipisclit, seddo eiusmod tempr incididunt laborea.`,
-    },
-     {
-      id: 8,
-      src: rendering,
-      title: "RENDERING",
-      description: `Sorem spsum dolor sit amsectetr adipisclit, seddo eiusmod tempr incididunt laborea.`,
-    },
+      title: "3D MODELING AND RENDERING",
+      description: `we have the best team that can enable you to convert your 2D sketches/Plans to Architectural 3D modeling with high precision.`,
+    }
   ];
 
   return (

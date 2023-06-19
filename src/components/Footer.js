@@ -1,6 +1,6 @@
 import React from "react";
 import footer from "../assets/images/bg-footer.png";
-import logo from "../assets/images/logo.png";
+import logo from "../assets/images/logofooter.png"
 
 function Footer() {
   return (
@@ -61,8 +61,8 @@ function Footer() {
             
             <div className="container mx-auto flex flex-col md:flex-row justify-between text-white ">
               <div className="sr-only md:not-sr-only flex flex-col grow lg:-my-10">
-                <div className="flex mb-0 mx-12 items-end select-none">
-                  <img src={logo} alt="" className="w-[130px]" />
+                <div className="flex mb-0 mx-20  items-end select-none my-7">
+                  <img src={logo} alt="" className="w-[px] " />
                 </div>
                     <div className="flex mt-4  space-x-6 sm:justify-center md:mt-0">
               <a

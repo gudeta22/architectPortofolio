@@ -8,11 +8,10 @@ function AboutPage() {
   <div className=' px-4 mi:flex gap-6 py-36'>
   <div className='mi:w-1/2 py-7 flex flex-col justify-center gap-8'>
 <span className='flex items-center  font-bold'><div className='w-7 rounded-md mx-2 h-[2px] bg-red-600'></div><p>About Us</p></span>
-<h2 className=' text-[#1d2434] text-[24px] fontstyle font-extrabold text-5xl lg:text-5xl '>3 YEARS OF EXPERIENCE IN THIS AREA
+<h2 className=' text-[#1d2434] text-[24px] fontstyle font-extrabold text-5xl lg:text-5xl '>2 YEARS OF EXPERIENCE IN THIS AREA
 </h2>
-<p className='poppins font-normal text-[#686868]'>A suprisingly ambitious architectural design firm with energetic 
-  architecture and designers merged their experience to found Mz-architects in the capital city of ethiopia. We have the passion for creating designs that tell their story.</p>
-  <ButtonComponent url={"#"} title={'About Us'}/>
+<p className='poppins font-normal text-[#686868]'>Established in 2021 G.C, by a group of Architects and Engineers to provide a compressive range of design and supervision service for projects on different scales. Misikir Zewdu Architects is a registered, qualified & professional firm working on Architectural, Interior, and Landscape design solutions.</p>
+  <ButtonComponent url={"/about"} title={'About Us'}/>
     </div>
 
     <div className='flex md:w-1/2 relative'>

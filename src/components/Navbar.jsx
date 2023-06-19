@@ -18,7 +18,7 @@ function Navbar() {
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
               <div className="flex-shrink-0 ">
-                <img className="h-20 w-20 " src={logo} alt="Logo" />
+                <img className="h-32 w-40 " src={logo} alt="Logo" />
               </div>
             </div>
             <div className="hidden md:block ">

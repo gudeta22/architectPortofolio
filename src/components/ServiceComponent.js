@@ -1,27 +1,27 @@
 import React from "react";
 import Archi from "../assets/images/city.png";
-import Interior from '../assets/images/interior-design.png'
-import Urban from '../assets/images/modern-house.png'
+import permit from '../assets/images/affirmed.png'
+import modeling from '../assets/images/3d-modeling.png'
 import "../index.css";
 function ServiceComponent() {
   const services = [
     {
       id: 1,
       src: Archi,
-      title: "ARCHITECTURE",
-      description: `Sorem spsum dolor sit amsectetr adipisclit, seddo eiusmod tempr incididunt laborea.`,
+      title: "ARCHITECTURAL DESIGN",
+      description: `As an experienced provider of design Services, our designers translate architectural ideas into forms.`,
     },
     {
       id: 2,
-      src: Interior,
-      title: "INTERIOR DESIGN",
-      description: `Sorem spsum dolor sit amsectetr adipisclit, seddo eiusmod tempr incididunt laborea.`,
+      src: permit,
+      title: "BUILDING PERMIT PREPARATION",
+      description: `We make interior spaces more functional, safe, and beautiful for almost every type of building interior, by selecting essential and decorative materials.`,
     },
     {
       id: 3,
-      src: Urban,
-      title: "ARCHITECTURE",
-      description: `Sorem spsum dolor sit amsectetr adipisclit, seddo eiusmod tempr incididunt laborea.`,
+      src: modeling,
+      title: "3D MODELING AND RENDERING",
+      description: `we have the best team that can enable you to convert your 2D sketches/Plans to Architectural 3D modeling with high precision. `,
     },
   ];
 
@@ -36,7 +36,7 @@ function ServiceComponent() {
             </span>
           </div>
           <h1 className=" text-xl  md:text-4xl uppercase font-bold fontstyle  ">
-            WE PROVIDE BEST INTERIOR SOLUTION FOR YOU
+           WE PROVIDE BEST DESIGN SOLUTION FOR YOU
           </h1>
         </div>
       </div>
@@ -47,9 +47,9 @@ function ServiceComponent() {
             key={id}
             className="bg-[#f8f8f8]  shadow-md  sm:justify-center   lg:h-[28rem] rounded-lg"
           >
-            <div className="  mx-0 lg:w-auto p-[20px] flex justify-center items-center flex-col pt-5   gap-6  my-7">
+            <div className="  mx-0 lg:w-[25rem] md:w-[18rem] sm:w-[16rem] p-[20px] flex justify-center items-center flex-col pt-5   gap-6  my-7">
               <img src={service.src} alt="" className=" w-[25%]  " />
-              <h3 className="  font-semibold my-10">{service.title}</h3>
+              <h3 className="  font-semibold my-10 fontstyle">{service.title}</h3>
               <p className=" text-[#717081] text-center  poppins font-light">
                 {service.description}
               </p>

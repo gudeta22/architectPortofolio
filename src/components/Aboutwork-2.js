@@ -1,6 +1,7 @@
 import React from "react";
 import "../index.css";
 import ButtonComponent from "./ButtonComponent";
+import { Link } from "react-router-dom";
 function Aboutwork() {
   return (
     <div className="">
@@ -13,12 +14,11 @@ function Aboutwork() {
               Our best recent popular work here
             </h1>
             <p className=" text-white poppins ">
-              Brook presents your services with flexible, convenient and
-              <br /> cdpoe layouts. You can select your favorite layouts &
-              elements
-              <br /> for cular ts with unlimited ustomization possibilit.{" "}
+              We have established a high-quality private and government <br /> client both locally and internationally. We provide Architectural <br /> designs, building remodels and additions, As-built and proposed,<br /> and 3D modeling with high-quality rendering.{" "}
             </p>
-            <ButtonComponent title={"About us"} url={"#"} />
+            
+            {/* <ButtonComponent  title={'About Us'} url={"/about"}/> */}
+            
           </div>
         </div>
       </div>
