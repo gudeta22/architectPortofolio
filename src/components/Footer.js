@@ -26,7 +26,7 @@ function Footer() {
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">Phone: +251-911393207</li>
-                <li className="mb-4">Email: mzarchitechts@gmail.com</li>
+                <li className="mb-4">misikirzarchitects@gmail.com</li>
                 <li className="mb-4">Addis Ababa , Ethiopia</li>
                
               </ul>
@@ -37,12 +37,13 @@ function Footer() {
                 Service We Provide
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
-               <li className="mb-4">Building design</li>
-                <li className="mb-4">Supervision Services</li>
-                <li className="mb-4">Landscape Design</li>
+               <li className="mb-4">Architectural design</li>
                 <li className="mb-4">Interior Design</li>
-                <li className="mb-4">Permit Preparation</li>
-                <li className="mb-4">3D Modeling</li>
+                <li className="mb-4">Landscape Design</li>
+                <li className="mb-4">Remodel & Addition</li>
+                <li className="mb-4">Building Permit Preparation</li>
+                <li className="mb-4">3D Modeling and Rendering</li>
+                <li className="mb-4">AS Built & Proposed</li>
               </ul>
             </div>
              <div>
