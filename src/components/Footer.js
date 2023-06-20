@@ -21,7 +21,7 @@ function Footer() {
               </div>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              <h2 className="mb-6 text-sm font-semibold text-gray-200 uppercase dark:text-white">
                 Contacts
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
@@ -33,7 +33,7 @@ function Footer() {
             </div>
              
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              <h2 className="mb-6 text-sm font-semibold text-gray-200 uppercase dark:text-white">
                 Service We Provide
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
@@ -47,7 +47,7 @@ function Footer() {
               </ul>
             </div>
              <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              <h2 className="mb-6 text-sm font-semibold text-gray-200 uppercase dark:text-white">
                 Service We Provide
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">

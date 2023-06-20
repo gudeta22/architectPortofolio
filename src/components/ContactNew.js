@@ -9,7 +9,7 @@ function ContactComponent() {
   const Person = {
    
     name: "MISIKIR ZEWEDU",
-    phone: "0910541797",
+    phone: "+251910541797",
     email: "gbteshite6195@gmail.com",
     Address: "ADDIS ABEBA"
   };
@@ -45,7 +45,7 @@ function ContactComponent() {
               <div className="flex space-x-5 border p-8 bg-gray-200">
                 <img src={phone} alt="" className="h-10 w-10" />
                 <div className="my-2 fontstyle font-semibold">
-                  +251918996585
+                  +251-911393207
                 </div>
               </div>
             </div>
@@ -53,12 +53,12 @@ function ContactComponent() {
           <div>
             <button
               type="button"
-              className="px-5 text-sm text-center text-white border bg-green-600  b p-2 font-bold bg-primary-700 sm:w-fit focus:ring-4 focus:outline-none dark:hover:bg-primary-700"
+              className="px-5 text-sm text-center text-white border bg-green-700  b p-2 font-bold bg-primary-700 sm:w-fit focus:ring-4 focus:outline-none dark:hover:bg-primary-700"
               onClick={handleWhatsApp}
             >
                 <div className="flex space-x-4">
                  
-                   <span className="my-3">Call Now</span>
+                   <span className="my-3 fontstyle">WHAT'S APP</span>
                     <img src={whatsapp} alt="what'sApp" className="w-10 h-10" />
                 </div>
                

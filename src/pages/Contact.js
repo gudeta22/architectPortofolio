@@ -9,7 +9,7 @@ function ContactPage() {
   return (
     <div>
       <NavContact />
-      {/* <MapComponent /> */}
+      <MapComponent />
        {/* <ContactComponent /> */}
         <ContactNew />
     </div>
