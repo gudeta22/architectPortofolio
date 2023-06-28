@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import navbg from "../assets/images/bg-footer.png";
 import menu from "../assets/images/menu.png";
-import xicon from "../assets/images/xicon.jpg";
+import xicon from "../assets/images/xclose.png";
 import logo from "../assets/images/logofooter.png";
 import NavMenuComponent from "./navMenuComponent";
 
