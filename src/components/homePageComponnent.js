@@ -16,7 +16,7 @@ function HomePage() {
       >
         <div className="container m-auto ">
           <div className="px-4 absolute md:my-20 lg:my-48  my-16 ">
-            <div className=" w-[100%]  pt-[5rem] md:gap-6 flex flex-col gap-10  ">
+            <div className=" w-[100%]  pt-[5rem] md:gap-6 flex flex-col gap-5  ">
               <p class="text-white font-bold inline-block uppercase  relative font-rajdhani text-xs  lg:text-lg  md:text-lg fontstyle ">
                BEST ARCHITECTURAL FIRM IN THE TOWN
               </p>
@@ -29,7 +29,7 @@ function HomePage() {
                 <br />
                 Design Quality
               </h1>
-              <p className="text-white  text-base font-poppins lg:my-5">
+              <p className="text-white lg:text-lg md:text-medium text-sm font-poppins lg:my-5">
                 We creating lasting impression through architecture design.
               </p>
               <ButtonComponent url={"/contact"} title={"Contact Us"} />
