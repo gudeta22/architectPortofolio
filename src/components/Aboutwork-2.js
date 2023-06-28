@@ -12,7 +12,7 @@ function Aboutwork() {
             <h1 className=" md:text-[27px] lg:text-[27px] text-[25px] text-white fontstyle">
               Our best recent popular work here
             </h1>
-            <p className=" text-white poppins lg:text-sm text-sm font-light">
+            <p className=" text-white poppins lg:text-lg text-sm font-light">
               We have established a high-quality private and government <br /> client both locally and internationally. We provide Architectural <br /> designs, building remodels and additions, As-built and proposed,<br /> and 3D modeling with high-quality rendering.{" "}
             </p>
             

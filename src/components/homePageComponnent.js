@@ -7,7 +7,7 @@ function HomePage() {
   return (
     <section className="">
       <div
-        className=" bg-no-repeat h-[37rem] lg:h-screen w-[100%] md:h-screen bg-fixed  "
+        className=" bg-no-repeat h-[45rem] lg:h-screen w-[100%] md:h-screen "
         style={{
           backgroundImage: `url(${bgcolor})`,
           backgroundSize: "cover",
@@ -15,7 +15,7 @@ function HomePage() {
         }}
       >
         <div className="container m-auto ">
-          <div className="px-4 absolute md:my-20 lg:my-48  ">
+          <div className="px-4 absolute md:my-20 lg:my-48  my-16 ">
             <div className=" w-[100%]  pt-[5rem] md:gap-6 flex flex-col gap-10  ">
               <p class="text-white font-bold inline-block uppercase  relative font-rajdhani text-xs  lg:text-lg  md:text-lg fontstyle ">
                BEST ARCHITECTURAL FIRM IN THE TOWN

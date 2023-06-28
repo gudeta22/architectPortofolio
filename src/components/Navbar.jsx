@@ -22,15 +22,15 @@ function Navbar() {
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
-        className=" border-none w-[100%]  fixed z-50 animate animate-fade-down animate-ease-linear bg-fixed"
+        className=" border-none w-[100%]  fixed z-50 animate animate-fade-down animate-ease-linear "
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
-          <div className="flex items-center justify-between h-16 container   ">
+          <div className="flex items-center justify-between h-20 container   ">
             <div className="flex items-center">
-              <div className="flex-shrink-0  ">
+              <div className="flex-shrink-0   ">
                 <Link to="/">
                   <img
-                    className="lg:h-32  sm:w-24 w-24 lg:mx-3"
+                    className="lg:h-32 lg:w-32   sm:w-24 w-24 "
                     src={logo}
                     alt="Logo"
                   />

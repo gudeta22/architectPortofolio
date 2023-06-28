@@ -26,9 +26,9 @@ function Footer() {
         }}
       >
         <div className="mx-auto w-full max-w-screen-xl">
-          <div className="grid grid-cols-1 gap-8 px-4 py-6 lg:py-8 md:grid-cols-3 lg:grid-cols-4">
-            <div className="md:sr-only flex flex-col items-center grow-2 w-[10rem] -mx-3">
-              <div className="my-6 select-none">
+          <div className="grid grid-cols-1 gap-8 px-4 lg:py-8 md:grid-cols-3 lg:grid-cols-4">
+            <div className="md:sr-only flex flex-col grow-2 w-[8rem] justify-start">
+              <div className="  select-none">
                 <img src={logo} alt="" className="w-56" />
               </div>
             </div>

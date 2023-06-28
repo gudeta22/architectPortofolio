@@ -64,7 +64,10 @@ import kain3 from "../assets/projects/KAIN RESIDENCE/3.jpg";
 import kain4 from "../assets/projects/KAIN RESIDENCE/4.jpg";
 
 function ProjectsComponent() {
-
+  
+  useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
   const images =useMemo(() =>  [
     [jimmy, jimmy2, jimmy3],
@@ -203,7 +206,7 @@ function ProjectsComponent() {
                 <img
                   src={image}
                   alt={`carousel-${currentItemIndex + 1}`}
-                  className="lg:h-[52rem]  h-[14rem] md:h-[25rem]  md:w-full sm:w-full"
+                  className="lg:h-[60rem]  h-[14rem] md:h-[25rem]  md:w-full sm:w-full"
                 />
               </div>
             ))}

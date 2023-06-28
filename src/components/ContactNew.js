@@ -28,7 +28,7 @@ function ContactComponent() {
     <section className="bg-white  container m-auto">
       <div className="py-8 lg:py-10 px-4 mx-auto ">
         <form action="#" className="space-y-9">
-          <div className="  flex items-center md:justify-center">
+          <div className="  flex items-center md:justify-center mx-10  ">
             <div className="  w-10  mb-5 h-[2px] -mt-4 mr-2  rounded-md bg-red-500 -left-16 "></div>
             <span className=" text-2xl mb-9  md:text-xlg fontstyle font-semibold uppercase md:text-center inline-block relative tracking-wider">
              Get in touch
@@ -36,8 +36,8 @@ function ContactComponent() {
           </div>
           
           <div className="flex space-x-96 my-16 p-5 justify-center">
-            <div className="flex-col space-y-12 my-2 w-[40rem]">
-              <div className="">
+            <div className="flex-col space-y-12 my-2 ">
+              <div className="w-[22rem] lg:w-[38rem] md:w-[38rem]">
                 <div className="flex space-x-5 border p-5 lg:p-8 md:p-8 bg-gray-200 w-auto">
                   <img src={homeicon} alt="" className="h-10 w-10 md:h-8 md:w-8 sm:w-5 sm:h-5 " />
                   <div className="my-2 fontstyle font-semibold">

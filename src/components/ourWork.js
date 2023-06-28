@@ -44,10 +44,10 @@ function OurWork() {
           </div>
         </div>
 
-        <div className=" m-auto  sm:grid grid-cols-2 gap-[29px]  lg:my-14 md:my-14">
+        <div className=" m-auto  sm:grid grid-cols-2 gap-[29px] lg:h-auto h-auto lg:my-14 md:my-14">
           {projects.map((project, id) => (
-            <div key={id} className="group mb-8">
-              <img src={project.src} alt="" className="w-full h-[16rem]" />
+            <div key={id} className="group mb-8 ">
+              <img src={project.src} alt="" className="w-full lg:h-[20rem] md:h-[15rem]  " />
               <div className="child relative pb-8 pl-2   z-10 bg-white w-full transition-all group-hover:-translate-y-10 duration-500 ease-in-out ">
                 <p className="text-left fontstyle text-[#1D1D1D] font-semibold text-sm lg:text-xl fontstyle">
                   {project.title}
