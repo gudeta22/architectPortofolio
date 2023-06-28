@@ -15,7 +15,7 @@ function AboutPage() {
             <p>About Us</p>
           </span>
           <h2 className=" text-[#1d2434] text-[24px] fontstyle font-extrabold text-5xl lg:text-5xl ">
-           
+          We Creat Architectural Masterpieces
           </h2>
           <p className="poppins font-normal text-[#686868]">
             In the year 2021 G.C, a group of passionate Architects and Engineers

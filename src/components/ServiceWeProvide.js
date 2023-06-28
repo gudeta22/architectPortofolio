@@ -5,6 +5,7 @@ import building from "../assets/images/home.png";
 import drawing from "../assets/images/drawing.png";
 import permit from "../assets/images/affirmed.png";
 import modeling from "../assets/images/3d-modeling.png";
+import remodel from '../assets/images/remodeling.png'
 
 function ServiceWeProvide({ index }) {
    useEffect(() => {
@@ -44,7 +45,7 @@ function ServiceWeProvide({ index }) {
     },
     {
       id: 4,
-      src: Interior,
+      src: remodel,
       title: "REMODEL & ADDITION",
       description: `As an experienced provider of design Services, our designers translate architectural ideas into forms.`,
     },

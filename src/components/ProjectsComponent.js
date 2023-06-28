@@ -183,7 +183,25 @@ function ProjectsComponent() {
         <div className="grid lg:grid-cols-3 m-5 lg:m-32 gap-4 md:grid-cols-2 sm:grid-cols-1 md:m-8 " >
           {isOpen && currentItemIndex !== null && (
         <div className="fixed top-0 left-0 w-full h-screen flex items-center justify-center z-50 bg-black bg-opacity-80">
-          
+           <button
+                  className="absolute top-2 right-2 text-white text-xl "
+                  onClick={handleClose}
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
+                </button>
           <Carousel 
             showArrows={true}
             showThumbs={false}
@@ -199,8 +217,9 @@ function ProjectsComponent() {
                 (photoIndex + 1) % images[currentItemIndex].length
               )
             }
-            
+           
           >
+           
             {images[currentItemIndex].map((image, index) => (
               <div key={index} className="lg:m-20  md:h-[30rem] lg:h-[50rem]  ">
                 <img
@@ -208,7 +227,10 @@ function ProjectsComponent() {
                   alt={`carousel-${currentItemIndex + 1}`}
                   className="lg:h-[60rem]  h-[14rem] md:h-[25rem]  md:w-full sm:w-full"
                 />
-              </div>
+               
+                
+                </div>
+            
             ))}
           </Carousel>
           
