@@ -1,6 +1,6 @@
 import React, { useState , useEffect, useMemo} from "react";
 
-import "react-image-lightbox/style.css";
+
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "react-multi-carousel/lib/styles.css";
@@ -180,9 +180,7 @@ function ProjectsComponent() {
         <div className="grid lg:grid-cols-3 m-5 lg:m-32 gap-4 md:grid-cols-2 sm:grid-cols-1 md:m-8 " >
           {isOpen && currentItemIndex !== null && (
         <div className="fixed top-0 left-0 w-full h-screen flex items-center justify-center z-50 bg-black bg-opacity-80">
-          <button className="absolute top-2 right-2 text-white text-2xl" onClick={handleClose}>
-      &times;
-    </button>
+          
           <Carousel 
             showArrows={true}
             showThumbs={false}
