@@ -45,29 +45,24 @@ function Footer() {
 
             <div>
               <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white fontstyle lg:text-lg">
-                Service We Provide
+                Designs
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium md:text-sm lg:text-lg">
                 <li className="mb-4">Architectural design</li>
                 <li className="mb-4">Interior Design</li>
                 <li className="mb-4">Landscape Design</li>
-                <li className="mb-4">Remodel & Addition</li>
-                <li className="mb-4">Building Permit Preparation</li>
-                <li className="mb-4">3D Modeling and Rendering</li>
-                <li className="mb-4">AS Built & Proposed</li>
+                
               </ul>
             </div>
             <div>
               <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white fontstyle lg:text-lg">
-                Service We Provide
+                Services
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium md:text-sm lg:text-lg ">
-                <li className="mb-4">Building design</li>
-                <li className="mb-4">Supervision Services</li>
-                <li className="mb-4">Landscape Design</li>
-                <li className="mb-4">Interior Design</li>
-                <li className="mb-4">Permit Preparation</li>
-                <li className="mb-4">3D Modeling</li>
+                <li className="mb-4">Remodel & Addition</li>
+                <li className="mb-4">Building Permit Preparation</li>
+                <li className="mb-4">3D Modeling and Rendering</li>
+                <li className="mb-4">AS Built & Proposed</li>
               </ul>
             </div>
 
