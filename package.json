@@ -13,6 +13,8 @@
     "react-image-gallery": "^1.2.12",
     "react-image-lightbox": "^5.1.4",
     "react-modal": "^3.16.1",
+    "react-multi-carousel": "^2.8.4",
+    "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.12.1",
     "react-scripts": "5.0.1",
     "rive-react": "^3.0.53",

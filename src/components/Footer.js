@@ -1,8 +1,20 @@
 import React from "react";
 import footer from "../assets/images/bg-footer.png";
-import logo from "../assets/images/logofooter.png"
+import logo from "../assets/images/logofooter.png";
+import whatapp from "../assets/images/whatsapp.png";
+import linkedin from "../assets/images/linkedin.png";
 
 function Footer() {
+  const Person = {
+    phone: "+251969137151",
+  };
+
+  const handleWhatsApp = () => {
+    const phoneNumber = encodeURIComponent(Person.phone);
+    const message = encodeURIComponent("Hello, I would like to get in touch.");
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
+    window.open(whatsappURL, "_blank");
+  };
   return (
     <div>
       <footer
@@ -14,30 +26,29 @@ function Footer() {
         }}
       >
         <div className="mx-auto w-full max-w-screen-xl">
-          <div className="grid grid-cols-1 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
+          <div className="grid grid-cols-1 gap-8 px-4 py-6 lg:py-8 md:grid-cols-3 lg:grid-cols-4">
             <div className="md:sr-only flex flex-col items-center grow-2 w-[10rem] -mx-3">
               <div className="my-6 select-none">
-                <img src={logo} alt="" className="w-52" />
+                <img src={logo} alt="" className="w-56" />
               </div>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-200 uppercase dark:text-white">
+              <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white fontstyle lg:text-lg">
                 Contacts
               </h2>
-              <ul className="text-gray-500 dark:text-gray-400 font-medium">
+              <ul className="text-gray-500 dark:text-gray-400 font-medium md:text-sm lg:text-lg">
                 <li className="mb-4">Phone: +251-911393207</li>
                 <li className="mb-4">misikirzarchitects@gmail.com</li>
                 <li className="mb-4">Addis Ababa , Ethiopia</li>
-               
               </ul>
             </div>
-             
+
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-200 uppercase dark:text-white">
+              <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white fontstyle lg:text-lg">
                 Service We Provide
               </h2>
-              <ul className="text-gray-500 dark:text-gray-400 font-medium">
-               <li className="mb-4">Architectural design</li>
+              <ul className="text-gray-500 dark:text-gray-400 font-medium md:text-sm lg:text-lg">
+                <li className="mb-4">Architectural design</li>
                 <li className="mb-4">Interior Design</li>
                 <li className="mb-4">Landscape Design</li>
                 <li className="mb-4">Remodel & Addition</li>
@@ -46,12 +57,12 @@ function Footer() {
                 <li className="mb-4">AS Built & Proposed</li>
               </ul>
             </div>
-             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-200 uppercase dark:text-white">
+            <div>
+              <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white fontstyle lg:text-lg">
                 Service We Provide
               </h2>
-              <ul className="text-gray-500 dark:text-gray-400 font-medium">
-               <li className="mb-4">Building design</li>
+              <ul className="text-gray-500 dark:text-gray-400 font-medium md:text-sm lg:text-lg ">
+                <li className="mb-4">Building design</li>
                 <li className="mb-4">Supervision Services</li>
                 <li className="mb-4">Landscape Design</li>
                 <li className="mb-4">Interior Design</li>
@@ -59,157 +70,46 @@ function Footer() {
                 <li className="mb-4">3D Modeling</li>
               </ul>
             </div>
-            
+
             <div className="container mx-auto flex flex-col md:flex-row justify-between text-white ">
-              <div className="sr-only md:not-sr-only flex flex-col grow lg:-my-10">
+              <div className="sr-only md:sr-only  lg:not-sr-only flex flex-col grow lg:-my-10">
                 <div className="flex mb-0 mx-20  items-end select-none my-7">
-                  <img src={logo} alt="" className="w-[px] " />
+                  <img src={logo} alt="" className="" />
                 </div>
-                    <div className="flex mt-4  space-x-6 sm:justify-center md:mt-0">
-              <a
-                href="https://facebook.com"
-                className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
-              >
-                <svg
-                  className="w-5 h-5"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-                <span className="sr-only">Facebook page</span>
-              </a>
-              <a
-                href="https://facebook.com"
-                className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
-              >
-                <svg
-                  className="w-5 h-5"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-                <span className="sr-only">Instagram page</span>
-              </a>
-              <a
-                href="https://facebook.com"
-                className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
-              >
-                <svg
-                  className="w-5 h-5"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
-                </svg>
-                <span className="sr-only">Twitter page</span>
-              </a>
-                <a
-                href="https://www.linkedin.com/in/your-linkedin-profile"
-                className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
-              >
-                <svg
-                  className="w-5 h-5"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  <path d="M20.25 3h-16.5c-1.517 0-2.75 1.233-2.75 2.75v16.5c0 1.517 1.233 2.75 2.75 2.75h16.5c1.517 0 2.75-1.233 2.75-2.75v-16.5c0-1.517-1.233-2.75-2.75-2.75zM8.809 20.25h-3.059v-9.749h3.059v9.749zM7.279 9.941h.031c1.025 0 1.745-.711 1.745-1.596-.032-.919-.72-1.596-1.759-1.596-1.05 0-1.743.711-1.743 1.596s.731 1.596 1.725 1.596zM19.221 20.25h-3.056v-5.06c0-1.279-.484-1.836-1.348-1.836-.734 0-1.165.497-1.36.978-.071.177-.089.42-.089.665v5.254h-3.056s.04-8.449 0-9.33h3.056v1.318c.407-.634 1.14-1.54 2.785-1.54 2.033 0 3.569 1.332 3.569 4.219v5.333z" />
-                </svg>
-                <span className="sr-only">LinkedIn account</span>
-              </a>
-            </div>
-               
+                <div className="flex mt-4  space-x-6 sm:justify-center md:mt-0">
+                  <a href="www.wa.com" onClick={handleWhatsApp} className="text-gray-400 cursor-pointer">
+                    <img src={whatapp} alt="WhatsApp" width="32" height="24" />
+                    <span class="sr-only">WhatsApp</span>
+                  </a>
+
+                  <a
+                    href="https://linkedin.com/"
+                    class="text-gray-400"
+                  >
+                    <img src={linkedin} alt="WhatsApp" width="32" height="24" />
+                    <span class="sr-only">WhatsApp</span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
           <div className="px-4 py-6 bg-transparent md:flex md:items-center md:justify-between my-6">
-            <span className="text-sm text-gray-500 dark:text-gray-300 sm:text-center">
+            <span className="text-sm text-gray-500  sm:text-center">
               © 2023{" "}
-              <a
-                href="#"
-                className="text-red-600 sr-only md:not-sr-only"
-              >
+              <a href="misikirzwedu" className="text-red-600 sr-only md:not-sr-only">
                 MisikrZewdu™
               </a>
               . All Rights Reserved.
             </span>
             <div className="flex mt-4 lg:sr-only md:not-sr-only space-x-6 sm:justify-center md:mt-0">
-              <a
-                href="https://facebook.com"
-                className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
-              >
-                <svg
-                  className="w-5 h-5"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-                <span className="sr-only">Facebook page</span>
+              <a href="www.wa.com" onClick={handleWhatsApp} class="text-gray-400">
+                <img src={whatapp} alt="WhatsApp" width="32" height="24" />
+                <span class="sr-only">WhatsApp</span>
               </a>
-              <a
-                href="https://facebook.com"
-                className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
-              >
-                <svg
-                  className="w-5 h-5"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-                <span className="sr-only">Instagram page</span>
-              </a>
-              <a
-                href="https://facebook.com"
-                className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
-              >
-                <svg
-                  className="w-5 h-5"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
-                </svg>
-                <span className="sr-only">Twitter page</span>
-              </a>
-                <a
-                href="https://www.linkedin.com/in/your-linkedin-profile"
-                className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
-              >
-                <svg
-                  className="w-5 h-5"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  <path d="M20.25 3h-16.5c-1.517 0-2.75 1.233-2.75 2.75v16.5c0 1.517 1.233 2.75 2.75 2.75h16.5c1.517 0 2.75-1.233 2.75-2.75v-16.5c0-1.517-1.233-2.75-2.75-2.75zM8.809 20.25h-3.059v-9.749h3.059v9.749zM7.279 9.941h.031c1.025 0 1.745-.711 1.745-1.596-.032-.919-.72-1.596-1.759-1.596-1.05 0-1.743.711-1.743 1.596s.731 1.596 1.725 1.596zM19.221 20.25h-3.056v-5.06c0-1.279-.484-1.836-1.348-1.836-.734 0-1.165.497-1.36.978-.071.177-.089.42-.089.665v5.254h-3.056s.04-8.449 0-9.33h3.056v1.318c.407-.634 1.14-1.54 2.785-1.54 2.033 0 3.569 1.332 3.569 4.219v5.333z" />
-                </svg>
-                <span className="sr-only">LinkedIn account</span>
+
+              <a href="https://linkedin.com/" class="text-gray-400">
+                <img src={linkedin} alt="WhatsApp" width="32" height="24" />
+                <span class="sr-only">WhatsApp</span>
               </a>
             </div>
           </div>

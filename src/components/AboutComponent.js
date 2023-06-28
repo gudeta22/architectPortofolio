@@ -1,8 +1,11 @@
-import React from "react";
+import React , {useEffect} from "react";
 import About1 from "../assets/images/about1.png";
 import About2 from "../assets/images/about2.png";
 import ButtonComponent from "./ButtonComponent";
 function AboutPage() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
   return (
     <div className="container m-auto">
       <div className=" px-4 mi:flex gap-6 py-36">
@@ -27,10 +30,10 @@ function AboutPage() {
         </div>
 
         <div className="flex md:w-1/2 relative">
-          <div className=" z-10  absolute  mi:w-[80%] mi:left-6 lg:w-full">
+          <div className=" z-10  absolute  mi:w-[80%] mi:left-2  lg:w-[28rem]">
             <img src={About1} className=" " alt="" />
           </div>
-          <div className=" relative md:-right-[109px] md:top-4 mi:top-7 mi:right-0 lg:top-7 lg:-right-[109px] ">
+          <div className=" relative md:-right-[109px] md:top-4 mi:top-7 mi:right-0 lg:top-7 lg:-right-[40px]  ">
             <img className=" " src={About2} alt="" />
           </div>
         </div>

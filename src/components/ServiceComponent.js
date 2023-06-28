@@ -1,7 +1,7 @@
 import React from "react";
 import Archi from "../assets/images/city.png";
-import permit from '../assets/images/affirmed.png'
-import modeling from '../assets/images/3d-modeling.png'
+import permit from "../assets/images/affirmed.png";
+import modeling from "../assets/images/3d-modeling.png";
 import "../index.css";
 function ServiceComponent() {
   const services = [
@@ -36,20 +36,22 @@ function ServiceComponent() {
             </span>
           </div>
           <h1 className=" text-xl  md:text-4xl uppercase font-bold fontstyle  ">
-           WE PROVIDE BEST DESIGN SOLUTION FOR YOU
+            WE PROVIDE BEST DESIGN SOLUTION FOR YOU
           </h1>
         </div>
       </div>
 
-      <div className=" container m-auto  rounded-lg  md:-mt-44 -mt-72 md:flex justify-center w-full  md:gap-7 sm:grid sm:grid-cols-2 sm:m-auto sm:gap-4 sm:-mt-44  ">
+      <div className="container lg:flex  lg:justify-center m-auto  rounded-lg  p-10 md:-mt-44 -mt-72 md:grid  w-full    lg:gap-3 md:gap-2 sm:grid sm:grid-cols-2 lg:grid-col-3 sm:m-auto sm:gap-4 sm:-mt-44  ">
         {services.map((service, id) => (
           <div
             key={id}
-            className="bg-[#f8f8f8]  shadow-md  sm:justify-center   lg:h-[28rem] rounded-lg"
+            className="bg-[#f8f8f8]  shadow-md  md:flex sm:justify-center  my-2 lg:h-[28rem] lg:w-[20.7rem]   rounded-lg  "
           >
-            <div className="  mx-0 lg:w-[25rem] md:w-[18rem] sm:w-[16rem] p-[20px] flex justify-center items-center flex-col pt-5   gap-6  my-7">
-              <img src={service.src} alt="" className=" w-[25%]  " />
-              <h3 className="  font-semibold my-10 fontstyle">{service.title}</h3>
+            <div className="mx-0 lg:w-[30rem] md:w-[18rem] sm:w-[16rem] p-[20px] flex justify-center items-center flex-col pt-5   gap-6  my-7">
+              <img src={service.src} alt="" className=" w-[20%] w-  " />
+              <h3 className="  font-semibold my-10 fontstyle">
+                {service.title}
+              </h3>
               <p className=" text-[#717081] text-center  poppins font-light">
                 {service.description}
               </p>

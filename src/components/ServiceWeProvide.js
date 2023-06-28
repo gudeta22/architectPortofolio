@@ -1,19 +1,34 @@
-import React from "react";
+import React , {useEffect} from "react";
 import Archi from "../assets/images/city.png";
-import Interior from '../assets/images/interior-design.png'
-import building from '../assets/images/home.png'
-import drawing from '../assets/images/drawing.png'
-import permit from '../assets/images/affirmed.png'
-import modeling from '../assets/images/3d-modeling.png'
-import rendering from '../assets/images/rendering.png'
+import Interior from "../assets/images/interior-design.png";
+import building from "../assets/images/home.png";
+import drawing from "../assets/images/drawing.png";
+import permit from "../assets/images/affirmed.png";
+import modeling from "../assets/images/3d-modeling.png";
 
-function ServiceWeProvide({index}) {
+function ServiceWeProvide({ index }) {
+   useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
   const services = [
     {
       id: 1,
       src: Archi,
       title: "ARCHITECTURAL DESIGN",
       description: `As an experienced provider of design Services, our designers translate architectural ideas into forms`,
+    },
+
+    {
+      id: 6,
+      src: permit,
+      title: "BUILDING PERMIT PREPARATION",
+      description: `We help you obtain your building permit by providing detailed working drawings and specifications.`,
+    },
+    {
+      id: 7,
+      src: modeling,
+      title: "3D MODELING AND RENDERING",
+      description: `we have the best team that can enable you to convert your 2D sketches/Plans to Architectural 3D modeling with high precision.`,
     },
     {
       id: 2,
@@ -24,34 +39,21 @@ function ServiceWeProvide({index}) {
     {
       id: 3,
       src: building,
-      title: "BUILDING DESIGN",
-      description: `Sorem spsum dolor sit amsectetr adipisclit, seddo eiusmod tempr incididunt laborea.`,
+      title: "AS BUILT & PROPOSED",
+      description: `We deliver the best As-Built drawing with exact current building look, or the intended layout of the building .`,
     },
-      {
+    {
       id: 4,
       src: Interior,
       title: "REMODEL & ADDITION",
-      description: `Sorem spsum dolor sit amsectetr adipisclit, seddo eiusmod tempr incididunt laborea.`,
+      description: `As an experienced provider of design Services, our designers translate architectural ideas into forms.`,
     },
-      {
+    {
       id: 5,
       src: drawing,
       title: "LANDSCAPE DESIGN",
       description: `we design your outdoor experience, with custom styling for your unique property.`,
     },
-      {
-      id: 6,
-      src: permit,
-      title: "PERMIT PREPARATION",
-      description: `We help you obtain your building permit by providing detailed working drawings and specifications.`,
-    },
-
-     {
-      id: 7,
-      src: modeling,
-      title: "3D MODELING AND RENDERING",
-      description: `we have the best team that can enable you to convert your 2D sketches/Plans to Architectural 3D modeling with high precision.`,
-    }
   ];
 
   return (
@@ -69,16 +71,18 @@ function ServiceWeProvide({index}) {
           </h1>
         </div>
       </div>
-    
-      <div  className=" container m-auto   rounded-lg grid-cols-1 lg:grid-cols-3 md:-mt-44 -mt-72 md:grid md:grid-cols-3  justify-center w-full lg:py-10 md:gap-7 sm:grid sm:grid-cols-2 sm:m-auto sm:gap-4 sm:-mt-44  ">
+
+      <div className=" container m-auto   rounded-lg grid-cols-1 lg:grid-cols-3 md:-mt-44 -mt-72 md:grid md:grid-cols-2  justify-center w-full lg:py-10 md:gap-3 sm:grid sm:grid-cols-2 sm:m-auto sm:gap-4 sm:-mt-44  ">
         {services.map((service, id) => (
           <div
             key={id}
             className="bg-[#f8f8f8]  shadow-md  sm:justify-center   lg:h-[28rem] rounded-lg"
           >
             <div className="  mx-0 lg:w-auto p-[20px] flex justify-center items-center flex-col pt-5   gap-6  my-7">
-              <img src={service.src} alt="" className="w-[20%]  " />
-              <h3 className="  font-semibold my-10 fontstyle ">{service.title}</h3>
+              <img src={service.src} alt="" className="w-[20%]" />
+              <h3 className="  font-semibold my-10 fontstyle ">
+                {service.title}
+              </h3>
               <p className=" text-[#717081] text-center  poppins font-light fontstyle">
                 {service.description}
               </p>

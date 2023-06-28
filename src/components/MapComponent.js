@@ -12,10 +12,10 @@ function MapComponent() {
   }, []);
 
   return (
-    <div>
-      <div className="relative w-full h-96 flex justify-center my-5 m-auto">
+    <div className=''>
+      <div className="relative w-full h-96 flex justify-center my-10 m-auto">
         <div className="mb-6 lg:mb-0 shrink w-full lg:w-[50%] lg:pr-3 flex my-5">
-          <iframe id="map" className="h-56 md:h-full w-full border-0 rounded-md" allowFullScreen="" loading="lazy"></iframe>
+          <iframe id="map" title='map ' className="h-56 md:h-full w-full border-0 rounded-md" allowFullScreen="" loading="lazy"></iframe>
         </div>
       </div>
     </div>

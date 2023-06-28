@@ -1,6 +1,10 @@
-import React, { useState } from "react";
-import Lightbox from "react-image-lightbox";
+import React, { useState , useEffect, useMemo} from "react";
+
 import "react-image-lightbox/style.css";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import "react-multi-carousel/lib/styles.css";
+
 import jimmy from "../assets/projects/JIMMY RESIDENCE/1.jpg";
 import jimmy2 from "../assets/projects/JIMMY RESIDENCE/2.jpg";
 import jimmy3 from "../assets/projects/JIMMY RESIDENCE/3.jpg";
@@ -42,26 +46,27 @@ import deric2 from "../assets/projects/DERRIK ADDITION/16031 BURKE AVE. ADDITION
 import deric3 from "../assets/projects/DERRIK ADDITION/16031 BURKE AVE. ADDITION - 10-10-22-03.jpg";
 import deric4 from "../assets/projects/DERRIK ADDITION/16031 BURKE AVE. ADDITION - 10-10-22-04.jpg";
 import deric5 from "../assets/projects/DERRIK ADDITION/16031 BURKE AVE. ADDITION - 10-10-22-05.jpg";
-import chris1 from '../assets/projects/CHRIS BEDROOM & BATH/1.jpg';
-import chris2 from '../assets/projects/CHRIS BEDROOM & BATH/2.jpg';
-import chris3 from '../assets/projects/CHRIS BEDROOM & BATH/3.jpg';
-import ryan1 from '../assets/projects/RYAN RESIDENCE/1.jpg';
-import ryan2 from '../assets/projects/RYAN RESIDENCE/2.jpg';
-import ryan3 from '../assets/projects/RYAN RESIDENCE/3.jpg';
-import ryan4 from '../assets/projects/RYAN RESIDENCE/4.jpg';
-import ryan5 from '../assets/projects/RYAN RESIDENCE/5.jpg';
-import ryan6 from '../assets/projects/RYAN RESIDENCE/6.jpg';
-import rosan1 from '../assets/projects/ROSSANE RENOVATION/1.jpg';
-import rosan2 from '../assets/projects/ROSSANE RENOVATION/2.jpg';
-import rosan3 from '../assets/projects/ROSSANE RENOVATION/3.jpg';
-import kain1 from '../assets/projects/KAIN RESIDENCE/1.jpg'
-import kain2 from '../assets/projects/KAIN RESIDENCE/2.jpg'
-import kain3 from '../assets/projects/KAIN RESIDENCE/3.jpg'
-import kain4 from '../assets/projects/KAIN RESIDENCE/4.jpg'
-
+import chris1 from "../assets/projects/CHRIS BEDROOM & BATH/1.jpg";
+import chris2 from "../assets/projects/CHRIS BEDROOM & BATH/2.jpg";
+import chris3 from "../assets/projects/CHRIS BEDROOM & BATH/3.jpg";
+import ryan1 from "../assets/projects/RYAN RESIDENCE/1.jpg";
+import ryan2 from "../assets/projects/RYAN RESIDENCE/2.jpg";
+import ryan3 from "../assets/projects/RYAN RESIDENCE/3.jpg";
+import ryan4 from "../assets/projects/RYAN RESIDENCE/4.jpg";
+import ryan5 from "../assets/projects/RYAN RESIDENCE/5.jpg";
+import ryan6 from "../assets/projects/RYAN RESIDENCE/6.jpg";
+import rosan1 from "../assets/projects/ROSSANE RENOVATION/1.jpg";
+import rosan2 from "../assets/projects/ROSSANE RENOVATION/2.jpg";
+import rosan3 from "../assets/projects/ROSSANE RENOVATION/3.jpg";
+import kain1 from "../assets/projects/KAIN RESIDENCE/1.jpg";
+import kain2 from "../assets/projects/KAIN RESIDENCE/2.jpg";
+import kain3 from "../assets/projects/KAIN RESIDENCE/3.jpg";
+import kain4 from "../assets/projects/KAIN RESIDENCE/4.jpg";
 
 function ProjectsComponent() {
-  const images = [
+
+
+  const images =useMemo(() =>  [
     [jimmy, jimmy2, jimmy3],
     [
       roccation1,
@@ -93,12 +98,11 @@ function ProjectsComponent() {
     [raya1, raya2, raya3, raya4, raya5],
     [chairman1, chairman2],
     [deric1, deric2, deric3, deric4, deric5],
-    [chris1 , chris2 , chris3],
-    [ryan1 , ryan2, ryan3,ryan4, ryan5 , ryan6 ],
-    [rosan1 , rosan2 , rosan3],
-    [kain1 , kain2, kain3, kain4]
-    
-  ];
+    [chris1, chris2, chris3],
+    [ryan1, ryan2, ryan3, ryan4, ryan5, ryan6],
+    [rosan1, rosan2, rosan3],
+    [kain1, kain2, kain3, kain4],
+  ] , [] );
 
   const imageLabels = [
     ["JIMMY RESIDENCE"],
@@ -112,12 +116,15 @@ function ProjectsComponent() {
     ["CHRIS BEDROOM & BATH"],
     ["RYAN RESIDENCE"],
     ["ROSSANE RENOVATION"],
-    ["KAIN RESIDENCE"]
+    ["KAIN RESIDENCE"],
   ];
 
   const [isOpen, setIsOpen] = useState(false);
-  const [photoIndex, setPhotoIndex] = useState(0);
+  const [photoIndex, setPhotoIndex] = useState("click nex to view image");
   const [currentItemIndex, setCurrentItemIndex] = useState(null);
+
+
+    
 
   const handleImageClick = (itemIndex, index) => {
     setIsOpen(true);
@@ -126,11 +133,41 @@ function ProjectsComponent() {
   };
 
   const handleClose = () => {
-    setIsOpen(false);
+    setIsOpen(true);
+    setCurrentItemIndex(null);
+  };
+  useEffect(() => {
+  const handleEscKey = (event) => {
+    if (event.keyCode === 27) {
+      handleClose();
+    }
   };
 
+  const handleArrowKeys = (event) => {
+    if (isOpen && currentItemIndex !== null) {
+      if (event.keyCode === 37) {
+        // Left arrow key
+        setPhotoIndex((photoIndex + images[currentItemIndex].length - 1) % images[currentItemIndex].length);
+      } else if (event.keyCode === 39) {
+        // Right arrow key
+        setPhotoIndex((photoIndex + 1) % images[currentItemIndex].length);
+      }
+    }
+  };
+
+  document.addEventListener("keydown", handleEscKey);
+  document.addEventListener("keydown", handleArrowKeys);
+
+  return () => {
+    document.removeEventListener("keydown", handleEscKey);
+    document.removeEventListener("keydown", handleArrowKeys);
+  };
+}, [isOpen, currentItemIndex, photoIndex , images]);
+
+
+
   return (
-    <div className="flex">
+    <div className="flex justify-center">
       <div className="sm:text-center my-14">
         <div className="sm:m-auto sm:w-[500px]">
           <div className="w-auto h-auto">
@@ -140,49 +177,58 @@ function ProjectsComponent() {
           </div>
         </div>
 
-        <div className="grid lg:grid-cols-3 m-5 lg:m-32 gap-4 md:grid-cols-2 sm:grid-cols-1 md:m-8">
+        <div className="grid lg:grid-cols-3 m-5 lg:m-32 gap-4 md:grid-cols-2 sm:grid-cols-1 md:m-8 " >
           {isOpen && currentItemIndex !== null && (
-            <Lightbox
-              mainSrc={images[currentItemIndex][photoIndex]}
-              nextSrc={
-                images[currentItemIndex][
-                  (photoIndex + 1) % images[currentItemIndex].length
-                ]
-              }
-              prevSrc={
-                images[currentItemIndex][
-                  (photoIndex + images[currentItemIndex].length - 1) %
-                    images[currentItemIndex].length
-                ]
-              }
-              onCloseRequest={handleClose}
-              onMovePrevRequest={() =>
-                setPhotoIndex(
-                  (photoIndex + images[currentItemIndex].length - 1) %
-                    images[currentItemIndex].length
-                )
-              }
-              onMoveNextRequest={() =>
-                setPhotoIndex(
-                  (photoIndex + 1) % images[currentItemIndex].length
-                )
-              }
-            />
-          )}
+        <div className="fixed top-0 left-0 w-full h-screen flex items-center justify-center z-50 bg-black bg-opacity-80">
+          <button className="absolute top-2 right-2 text-white text-2xl" onClick={handleClose}>
+      &times;
+    </button>
+          <Carousel 
+            showArrows={true}
+            showThumbs={false}
+            selectedItem={photoIndex}
+            onClickPrev={() =>
+              setPhotoIndex(
+                (photoIndex + images[currentItemIndex].length - 1) %
+                  images[currentItemIndex].length
+              )
+            }
+            onClickNext={() =>
+              setPhotoIndex(
+                (photoIndex + 1) % images[currentItemIndex].length
+              )
+            }
+            
+          >
+            {images[currentItemIndex].map((image, index) => (
+              <div key={index} className="lg:m-20  md:h-[30rem] lg:h-[50rem]  ">
+                <img
+                  src={image}
+                  alt={`carousel-${currentItemIndex + 1}`}
+                  className="lg:h-[52rem]  h-[14rem] md:h-[25rem]  md:w-full sm:w-full"
+                />
+              </div>
+            ))}
+          </Carousel>
+          
+        </div>
+      )}
+
           {images.map((itemImages, itemIndex) => (
             <div
               key={itemIndex}
               className="cursor-pointer relative"
               onClick={() => handleImageClick(itemIndex, 0)}
+              
             >
               <img
-                src={itemImages[0]}
+                src={itemImages[1]}
                 alt={`carousel-${itemIndex + 1}`}
-                className="w-full h-[20rem]"
+                className="w-full md:w-full sm:w-full h-[15rem] lg:h-[20rem]"
               />
               <div className="absolute inset-0 flex items-start justify-center opacity-0 hover:opacity-100 h-full w-full transition-opacity duration-300">
                 <div className="text-white text-lg font-bold bg-black py-24 h-20 md:h-40 lg:h-64 bg-opacity-70 px-4 flex w-[100%] justify-center items-center">
-                  <span className="border p-2 w-24 mx-5">View</span>
+                  <span className="border p-2 w-24 mx-6 px-6">View</span>
                 </div>
               </div>
               <div className="mt-2 flex flex-col text-left fontstyle font-semibold">
