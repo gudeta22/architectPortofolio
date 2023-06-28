@@ -146,10 +146,10 @@ function ProjectsComponent() {
   const handleArrowKeys = (event) => {
     if (isOpen && currentItemIndex !== null) {
       if (event.keyCode === 37) {
-        // Left arrow key
+        // Left 
         setPhotoIndex((photoIndex + images[currentItemIndex].length - 1) % images[currentItemIndex].length);
       } else if (event.keyCode === 39) {
-        // Right arrow key
+        // Right
         setPhotoIndex((photoIndex + 1) % images[currentItemIndex].length);
       }
     }
