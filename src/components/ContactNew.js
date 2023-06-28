@@ -37,7 +37,7 @@ function ContactComponent() {
           
           <div className="flex space-x-96 my-16 p-5 justify-center">
             <div className="flex-col space-y-12 my-2 ">
-              <div className="w-[22rem] lg:w-[38rem] md:w-[38rem]">
+              <div className="w-[22rem] lg:w-[38rem] md:w-[38rem] m-5">
                 <div className="flex space-x-5 border p-5 lg:p-8 md:p-8 bg-gray-200 w-auto">
                   <img src={homeicon} alt="" className="h-10 w-10 md:h-8 md:w-8 sm:w-5 sm:h-5 " />
                   <div className="my-2 fontstyle font-semibold">

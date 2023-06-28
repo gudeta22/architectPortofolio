@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import navbg from "../assets/images/bg-footer.png";
 import menu from "../assets/images/menu.png";
-import xicon from "../assets/images/xicon.png";
+import xicon from "../assets/images/xclose.png";
 import logo from "../assets/images/logofooter.png";
 import NavMenuComponent from "./navMenuComponent";
 
@@ -82,7 +82,7 @@ function Navbar() {
                   className="text-gray-800 hover:text-gray-600 focus:outline-none"
                   onClick={toggleMenu}
                 >
-                  <img src={xicon} alt="Menu" className="h-5 w-6" />
+                  <img src={xicon} alt="Menu" className="h-8 w-8" />
                 </button>
               ) : (
                 <button
