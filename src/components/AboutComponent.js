@@ -2,6 +2,7 @@ import React , {useEffect} from "react";
 import About1 from "../assets/images/about1.png";
 import About2 from "../assets/images/about2.png";
 import ButtonComponent from "./ButtonComponent";
+import { Link } from "react-router-dom";
 function AboutPage() {
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -26,7 +27,9 @@ function AboutPage() {
             a team of dedicated professionals who excel in providing exceptional
             Architectural, Interior, and Landscape design solutions.
           </p>
-          <ButtonComponent url="/about" title={"About Us"} />
+          <Link to="/about" >
+          <ButtonComponent title={"About Us"} />
+          </Link>
         </div>
 
         <div className="flex md:w-1/2 relative">
