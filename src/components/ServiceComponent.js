@@ -26,7 +26,7 @@ function ServiceComponent() {
   ];
 
   return (
-    <div className="bg-cover">
+    <div className="lg:bg-cover sm:bg-cover bg-cover md:bg-cover">
       <div className="p-4 service bg-gray-900 pt-28  h-[500px] md:text-center md:h-[35rem]  text-white  ">
         <div className=" md:m-auto md:flex flex-col justify-center md:w-[620px]   ">
           <div className="  flex items-center md:justify-center">
