@@ -15,7 +15,7 @@ function ServiceComponent() {
       id: 2,
       src: permit,
       title: "BUILDING PERMIT PREPARATION",
-      description: `We make interior spaces more functional, safe, and beautiful for almost every type of building interior, by selecting essential and decorative materials.`,
+      description: `Our company provides building permit drawing services for a variety of projects, including new construction, renovations, and additions. `,
     },
     {
       id: 3,

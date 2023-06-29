@@ -24,7 +24,7 @@ function Navbar() {
         }}
         className=" border-none w-[100%]  fixed z-50 animate animate-fade-down animate-ease-linear "
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
+        <div className=" container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
           <div className="flex items-center justify-between sm:h-10 h-16 lg:h-20 container">
             <div className="flex items-center">
               <div className="flex-shrink-0">
@@ -98,7 +98,7 @@ function Navbar() {
         </div>
       </nav>
 
-      <div className="bg-gray-500 transition-all fixed z-50 my-20 w-full  flex justify-start px-5 scroll-smooth animate-fade-down animate-ease-in ">
+      <div className="bg-gray-500 transition-all fixed z-50 my-16 w-full  flex justify-start px-5 scroll-smooth animate-fade-down animate-ease-in ">
         {open && (
           <ul className="text-white  font-semibold md:hidden lg:hidden sm:hidden transform transition-all animate animate-fade-down animate-ease-linear ease-out duration-300 select-none fontstyle ">
             <li className="p-1 fontstyle">

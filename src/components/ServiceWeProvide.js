@@ -23,7 +23,7 @@ function ServiceWeProvide({ index }) {
       id: 6,
       src: permit,
       title: "BUILDING PERMIT PREPARATION",
-      description: `We help you obtain your building permit by providing detailed working drawings and specifications.`,
+      description: `Our company provides building permit drawing services for a variety of projects, including new construction, renovations, and additions. We have a team of experienced architects and engineers who can create drawings that meet all applicable building codes and regulations.`,
     },
     {
       id: 7,

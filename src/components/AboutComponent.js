@@ -26,7 +26,7 @@ function AboutPage() {
             a team of dedicated professionals who excel in providing exceptional
             Architectural, Interior, and Landscape design solutions.
           </p>
-          <ButtonComponent url={"/about"} title={"About Us"} />
+          <ButtonComponent url="/about" title={"About Us"} />
         </div>
 
         <div className="flex md:w-1/2 relative">
