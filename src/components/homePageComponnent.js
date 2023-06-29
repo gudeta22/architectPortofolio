@@ -1,6 +1,6 @@
 import React from "react";
 import bgcolor from "../assets/images/backnew.png";
-import ButtonComponent from "./ButtonComponent";
+import ButtonComponent from "../pages/ButtonComponent";
 
 function HomePage() {
   
