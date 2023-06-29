@@ -15,6 +15,9 @@ function Footer() {
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(whatsappURL, "_blank");
   };
+  const currentDate = new Date();
+  const currentYear = currentDate.getFullYear();
+
   return (
     <div>
       <footer
@@ -90,7 +93,7 @@ function Footer() {
           </div>
           <div className="px-4 py-6 bg-transparent md:flex md:items-center md:justify-between my-6">
             <span className="text-sm text-gray-500  sm:text-center">
-              © 2023{" "}
+               <span>© {currentYear}</span>{" "}
               <a href="misikirzwedu" className="text-red-600 sr-only md:not-sr-only">
                 MisikrZewdu™
               </a>
