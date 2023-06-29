@@ -1,6 +1,7 @@
 import React from "react";
 import bgcolor from "../assets/images/backnew.png";
-import ButtonComponent from "../pages/ButtonComponent";
+import ButtonComponent from "./ButtonComponent";
+import { Link } from "react-router-dom";
 
 function HomePage() {
   
@@ -32,7 +33,9 @@ function HomePage() {
               <p className="text-white lg:text-lg md:text-medium text-sm font-poppins lg:my-5">
                 We creating lasting impression through architecture design.
               </p>
-              <ButtonComponent url={"/contact"} title={"Contact Us"} />
+              <Link to='/contact' >
+               <ButtonComponent title={"Contact Us"} />
+              </Link>
             </div>
             <div className=" w-[100%] md:w-1/2"></div>
           </div>

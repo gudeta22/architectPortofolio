@@ -1,7 +1,7 @@
 import React , {useEffect} from "react";
 import About1 from "../assets/images/about1.png";
 import About2 from "../assets/images/about2.png";
-import ButtonComponent from "../pages/ButtonComponent";
+import ButtonComponent from "./ButtonComponent";
 function AboutPage() {
     useEffect(() => {
         window.scrollTo(0, 0);
