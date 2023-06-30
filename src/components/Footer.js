@@ -6,7 +6,7 @@ import linkedin from "../assets/images/linkedin.png";
 
 function Footer() {
   const Person = {
-    phone: "+251969137151",
+    phone: "+251911393207",
   };
 
   const handleWhatsApp = () => {
@@ -75,13 +75,13 @@ function Footer() {
                   <img src={logo} alt="" className="" />
                 </div>
                 <div className="flex mt-4  space-x-6 sm:justify-center md:mt-0">
-                  <a href="www.wa.com" onClick={handleWhatsApp} className="text-gray-400 cursor-pointer">
+                  <a href="#/+251911393207" onClick={handleWhatsApp} className="text-gray-400 cursor-pointer">
                     <img src={whatapp} alt="WhatsApp" width="32" height="24" />
                     <span class="sr-only">WhatsApp</span>
                   </a>
 
                   <a
-                    href="https://linkedin.com/"
+                    href="https://www.linkedin.com/in/misikir-zewdu-8719ba254?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B5A6TCtbGTwWLVvVi0SQIaA%3D%3D"
                     class="text-gray-400"
                   >
                     <img src={linkedin} alt="WhatsApp" width="32" height="24" />
@@ -100,12 +100,12 @@ function Footer() {
               . All Rights Reserved.
             </span>
             <div className="flex mt-4 lg:sr-only md:not-sr-only space-x-6 sm:justify-center md:mt-0">
-              <a href="www.wa.com" onClick={handleWhatsApp} class="text-gray-400">
+              <a href="#/+251911393207" onClick={handleWhatsApp} class="text-gray-400">
                 <img src={whatapp} alt="WhatsApp" width="32" height="24" />
                 <span class="sr-only">WhatsApp</span>
               </a>
 
-              <a href="https://linkedin.com/" class="text-gray-400">
+              <a href="https://www.linkedin.com/in/misikir-zewdu-8719ba254?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B5A6TCtbGTwWLVvVi0SQIaA%3D%3D" class="text-gray-400">
                 <img src={linkedin} alt="WhatsApp" width="32" height="24" />
                 <span class="sr-only">WhatsApp</span>
               </a>

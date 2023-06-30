@@ -31,7 +31,7 @@ function HomePage() {
                 Design Quality
               </h1>
               <p className="text-white lg:text-lg md:text-medium text-sm font-poppins lg:my-5">
-                We creating lasting impression through architecture design.
+                We create lasting impression through architecture design.
               </p>
               <Link to='/contact' >
                <ButtonComponent title={"Contact Us"} />
