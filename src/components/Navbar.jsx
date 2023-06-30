@@ -8,10 +8,16 @@ import NavMenuComponent from "./navMenuComponent";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
+  
 
   const toggleMenu = () => {
     setOpen(!open);
+    
   };
+  const closeMenu = () =>
+  {
+    setOpen(false)
+  }
   
 
   return (
@@ -33,6 +39,7 @@ function Navbar() {
                     className="lg:h-32 lg:w-32   sm:w-20 w-20"
                     src={logo}
                     alt="Logo"
+                    onClick={closeMenu}
                   />
                 </Link>
               </div>
@@ -42,13 +49,16 @@ function Navbar() {
                 <Link
                   to="/"
                   className="group text-white   rounded-md text-sm font-medium"
+                  
                 >
                   <NavMenuComponent menu={"Home"} />
+                  
                 </Link>
 
                 <Link
                   to="/about"
                   className="group text-white   rounded-md text-sm font-medium"
+
                 >
                   <NavMenuComponent menu={"About"} />
                 </Link>
@@ -81,8 +91,10 @@ function Navbar() {
                   type="button"
                   className="text-gray-800 hover:text-gray-600 focus:outline-none"
                   onClick={toggleMenu}
+                 
                 >
                   <img src={xicon} alt="Menu" className="h-8 w-8" />
+
                 </button>
               ) : (
                 <button
@@ -102,19 +114,19 @@ function Navbar() {
         {open && (
           <ul className="text-white  font-semibold md:hidden lg:hidden sm:hidden transform transition-all animate animate-fade-down animate-ease-linear ease-out duration-300 select-none fontstyle ">
             <li className="p-1 fontstyle">
-              <Link to="/">Home</Link>
+              <Link to="/" onClick={closeMenu}>Home</Link>
             </li>
             <li className="p-1 fontstyle">
-              <Link to="/about">About</Link>
+              <Link to="/about" onClick={closeMenu}>About</Link>
             </li>
             <li className="p-1 fontstyle">
-              <Link to="/services">Services</Link>
+              <Link to="/services" onClick={closeMenu}>Services</Link>
             </li>
             <li className="p-1 fontstyle">
-              <Link to="/projects">Projects</Link>
+              <Link to="/projects" onClick={closeMenu}>Projects</Link>
             </li>
             <li className="p-1 fontstyle">
-              <Link to="/contact">Contact</Link>
+              <Link to="/contact" onClick={closeMenu}>Contact</Link>
             </li>
           </ul>
         )}
