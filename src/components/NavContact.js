@@ -3,7 +3,7 @@ import footer from "../assets/images/bg-footer.png";
 function NavComponent() {
   return (
     <div
-      className=" w-full h-10 lg:h-[17rem] px-20 py-32 flex justify-center bg-fixed"
+      className=" w-full h-10 lg:h-[17rem] px-20 py-32 flex justify-center bg-fixed "
       style={{
         backgroundImage: `url(${footer})`,
         backgroundSize: "cover",
