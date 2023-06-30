@@ -68,7 +68,7 @@ function ServiceWeProvide({ index }) {
             </span>
           </div>
           <h1 className=" text-xl  md:text-4xl uppercase font-bold fontstyle  ">
-            WE PROVIDE BEST INTERIOR SOLUTION FOR YOU
+            WE PROVIDE BEST DESIGN SOLUTION FOR YOU
           </h1>
         </div>
       </div>
