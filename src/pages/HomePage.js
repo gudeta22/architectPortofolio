@@ -5,6 +5,7 @@ import OurWork from '../components/ourWork';
 import Aboutwork from '../components/Aboutwork-2';
 import HomePage from '../components/homePageComponnent';
 
+
 function Home() {
  
   return (
@@ -15,6 +16,7 @@ function Home() {
       <ServiceComponent />
       <OurWork />
       <Aboutwork />
+      
       
   
       

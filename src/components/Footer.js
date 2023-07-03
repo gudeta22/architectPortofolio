@@ -3,6 +3,7 @@ import footer from "../assets/images/bg-footer.png";
 import logo from "../assets/images/logofooter.png";
 import whatapp from "../assets/images/whatsapp.png";
 import linkedin from "../assets/images/linkedin.png";
+import BackToTop from "./BackToTop";
 
 function Footer() {
   const Person = {
@@ -111,8 +112,10 @@ function Footer() {
               </a>
             </div>
           </div>
+          <BackToTop />
         </div>
       </footer>
+      
     </div>
   );
 }
