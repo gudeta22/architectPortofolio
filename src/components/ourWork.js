@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import jammy from "../assets/projects/JIMMY RESIDENCE/1.jpg";
 import roccatani from "../assets/projects/ROCCATANI DWELLING/1273 WALDMERE ROAD-01.jpg";
 import andrew from "../assets/projects/ANDREW RESIDENCE/1.jpg";
@@ -46,6 +47,7 @@ function OurWork() {
 
         <div className=" m-auto  sm:grid grid-cols-2 gap-[29px] lg:h-auto h-auto lg:my-14 md:my-14">
           {projects.map((project, id) => (
+            <Link to="/projects" >
             <div key={id} className="group mb-8 ">
               <img src={project.src} alt="" className="w-full lg:h-[20rem] md:h-[15rem]  " />
               <div className="child relative pb-8 pl-2   z-10 bg-white w-full transition-all group-hover:-translate-y-10 duration-500 ease-in-out ">
@@ -54,6 +56,7 @@ function OurWork() {
                 </p>
               </div>
             </div>
+            </Link>
           ))}
         </div>
       </div>
