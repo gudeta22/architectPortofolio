@@ -41,7 +41,7 @@ export default function BackToTop(){
             onClick={backToTop}
             className={` ${
               showButton ? `inline-block` : `hidden`
-            } fixed bottom-[40px] animate-bounce  right-[px] z-50 p-5 opacity-64 bg-red-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out`}
+            } fixed bottom-[40px]   right-[px] z-50 p-5 opacity-64 bg-red-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out`}
           >
             <svg
               aria-hidden="true"
