@@ -47,7 +47,7 @@ export default function BackToTop(){
               aria-hidden="true"
               focusable="false"
               data-prefix="fas"
-              className="lg:w-6  lg:h-6 md:w-6 md:h-6 sm:w-4 sm:h-4 w-4 h-4"
+              className="lg:w-6 animate-bounce  lg:h-6 md:w-6 md:h-6 sm:w-4 sm:h-4 w-4 h-4"
               role="img"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 448 512"
