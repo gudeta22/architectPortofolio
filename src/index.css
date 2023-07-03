@@ -9,6 +9,9 @@
     right: 0;
     content: 'cover';
     height: 570px;
+    background-image: 100%;
+    width:100%;
+    background-size: cover;
    
 }
 .container{
