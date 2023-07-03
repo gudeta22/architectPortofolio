@@ -41,13 +41,13 @@ export default function BackToTop(){
             onClick={backToTop}
             className={` ${
               showButton ? `inline-block` : `hidden`
-            } fixed bottom-[40px]  right-[50px] z-50 p-5 opacity-64 bg-red-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out`}
+            } fixed bottom-[40px] animate-bounce  right-[px] z-50 p-5 opacity-64 bg-red-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out`}
           >
             <svg
               aria-hidden="true"
               focusable="false"
               data-prefix="fas"
-              className="lg:w-6 animate-bounce  lg:h-6 md:w-6 md:h-6 sm:w-4 sm:h-4 w-4 h-4"
+              className="lg:w-6  lg:h-6 md:w-6 md:h-6 sm:w-4 sm:h-4 w-4 h-4"
               role="img"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 448 512"
