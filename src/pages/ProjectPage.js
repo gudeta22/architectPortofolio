@@ -8,7 +8,7 @@ function ProjectPage() {
   return (
     <div>
       <NavProject />
-      {/* <ModalComponent /> */}
+     
       <ProjectsComponent />
     </div>
   )
