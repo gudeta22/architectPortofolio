@@ -1,5 +1,4 @@
-import React, { useState , useEffect, useMemo} from "react";
-
+import React, { useState, useEffect, useMemo } from "react";
 
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -64,48 +63,50 @@ import kain3 from "../assets/projects/KAIN RESIDENCE/3.jpg";
 import kain4 from "../assets/projects/KAIN RESIDENCE/4.jpg";
 
 function ProjectsComponent() {
-  
   useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
+    window.scrollTo(0, 0);
+  }, []);
 
-  const images =useMemo(() =>  [
-    [jimmy, jimmy2, jimmy3],
-    [
-      roccation1,
-      roccation2,
-      roccation3,
-      roccation4,
-      roccation5,
-      roccation6,
-      roccation7,
-      roccation8,
-      roccation9,
+  const images = useMemo(
+    () => [
+      [jimmy, jimmy2, jimmy3],
+      [
+        roccation1,
+        roccation2,
+        roccation3,
+        roccation4,
+        roccation5,
+        roccation6,
+        roccation7,
+        roccation8,
+        roccation9,
+      ],
+      [andrew1, andrew2],
+      [ramos, ramos2],
+      [
+        cameroon1,
+        cameroon2,
+        cameroon3,
+        cameroon4,
+        cameroon5,
+        cameroon6,
+        cameroon7,
+        cameroon8,
+        cameroon9,
+        cameroon10,
+        cameroon11,
+        cameroon12,
+      ],
+      [raya1, raya2, raya3, raya4, raya5],
+      [chairman1, chairman2],
+      [deric1, deric2, deric3, deric4, deric5],
+      [chris1, chris2, chris3],
+      [ryan1, ryan2, ryan3, ryan4, ryan5, ryan6],
+      [rosan1, rosan2, rosan3],
+      [kain1, kain2, kain3, kain4],
     ],
-    [andrew1, andrew2],
-    [ramos, ramos2],
-    [
-      cameroon1,
-      cameroon2,
-      cameroon3,
-      cameroon4,
-      cameroon5,
-      cameroon6,
-      cameroon7,
-      cameroon8,
-      cameroon9,
-      cameroon10,
-      cameroon11,
-      cameroon12,
-    ],
-    [raya1, raya2, raya3, raya4, raya5],
-    [chairman1, chairman2],
-    [deric1, deric2, deric3, deric4, deric5],
-    [chris1, chris2, chris3],
-    [ryan1, ryan2, ryan3, ryan4, ryan5, ryan6],
-    [rosan1, rosan2, rosan3],
-    [kain1, kain2, kain3, kain4],
-  ] , [] );
+    []
+  );
 
   const imageLabels = [
     ["JIMMY RESIDENCE"],
@@ -123,11 +124,8 @@ function ProjectsComponent() {
   ];
 
   const [isOpen, setIsOpen] = useState(false);
-  const [photoIndex, setPhotoIndex] = useState("click nex to view image");
+  const [photoIndex, setPhotoIndex] = useState("click next to view image");
   const [currentItemIndex, setCurrentItemIndex] = useState(null);
-
-
-    
 
   const handleImageClick = (itemIndex, index) => {
     setIsOpen(true);
@@ -140,34 +138,35 @@ function ProjectsComponent() {
     setCurrentItemIndex(null);
   };
   useEffect(() => {
-  const handleEscKey = (event) => {
-    if (event.keyCode === 27) {
-      handleClose();
-    }
-  };
-
-  const handleArrowKeys = (event) => {
-    if (isOpen && currentItemIndex !== null) {
-      if (event.keyCode === 37) {
-        // Left 
-        setPhotoIndex((photoIndex + images[currentItemIndex].length - 1) % images[currentItemIndex].length);
-      } else if (event.keyCode === 39) {
-        // Right
-        setPhotoIndex((photoIndex + 1) % images[currentItemIndex].length);
+    const handleEscKey = (event) => {
+      if (event.keyCode === 27) {
+        handleClose();
       }
-    }
-  };
+    };
 
-  document.addEventListener("keydown", handleEscKey);
-  document.addEventListener("keydown", handleArrowKeys);
+    const handleArrowKeys = (event) => {
+      if (isOpen && currentItemIndex !== null) {
+        if (event.keyCode === 37) {
+          // Left
+          setPhotoIndex(
+            (photoIndex + images[currentItemIndex].length - 1) %
+              images[currentItemIndex].length
+          );
+        } else if (event.keyCode === 39) {
+          // Right
+          setPhotoIndex((photoIndex + 1) % images[currentItemIndex].length);
+        }
+      }
+    };
 
-  return () => {
-    document.removeEventListener("keydown", handleEscKey);
-    document.removeEventListener("keydown", handleArrowKeys);
-  };
-}, [isOpen, currentItemIndex, photoIndex , images]);
+    document.addEventListener("keydown", handleEscKey);
+    document.addEventListener("keydown", handleArrowKeys);
 
-
+    return () => {
+      document.removeEventListener("keydown", handleEscKey);
+      document.removeEventListener("keydown", handleArrowKeys);
+    };
+  }, [isOpen, currentItemIndex, photoIndex, images]);
 
   return (
     <div className="flex justify-center">
@@ -180,69 +179,65 @@ function ProjectsComponent() {
           </div>
         </div>
 
-        <div className="grid lg:grid-cols-3 m-5 lg:m-32 gap-4 md:grid-cols-2 sm:grid-cols-1 md:m-8 " >
+        <div className="grid lg:grid-cols-3 m-5 lg:m-32 gap-4 md:grid-cols-2 sm:grid-cols-1 md:m-8 ">
           {isOpen && currentItemIndex !== null && (
-        <div className="fixed top-0 left-0 w-full h-screen flex items-center justify-center z-50 bg-black bg-opacity-80">
-           <button
-                  className="absolute top-2 right-2 text-white text-xl "
-                  onClick={handleClose}
+            <div className="fixed top-0 left-0 w-full h-screen flex items-center justify-center z-50 bg-black bg-opacity-80">
+              <button
+                className="absolute top-2 right-3 lg:right-10 text-white text-xl "
+                onClick={handleClose}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
                 >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+              <Carousel
+                showArrows={true}
+                showThumbs={false}
+                selectedItem={photoIndex}
+                onClickPrev={() =>
+                  setPhotoIndex(
+                    (photoIndex + images[currentItemIndex].length - 1) %
+                      images[currentItemIndex].length
+                  )
+                }
+                onClickNext={() =>
+                  setPhotoIndex(
+                    (photoIndex + 1) % images[currentItemIndex].length
+                  )
+                }
+              >
+                {images[currentItemIndex].map((image, index) => (
+                  <div
+                    key={index}
+                    className="lg:m-20  md:h-[30rem] lg:h-[50rem]  "
                   >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M6 18L18 6M6 6l12 12"
+                    <img
+                      src={image}
+                      alt={`carousel-${currentItemIndex + 1}`}
+                      className="lg:h-[60rem]  h-[14rem] md:h-[25rem]  md:w-full sm:w-full"
                     />
-                  </svg>
-                </button>
-          <Carousel 
-            showArrows={true}
-            showThumbs={false}
-            selectedItem={photoIndex}
-            onClickPrev={() =>
-              setPhotoIndex(
-                (photoIndex + images[currentItemIndex].length - 1) %
-                  images[currentItemIndex].length
-              )
-            }
-            onClickNext={() =>
-              setPhotoIndex(
-                (photoIndex + 1) % images[currentItemIndex].length
-              )
-            }
-           
-          >
-           
-            {images[currentItemIndex].map((image, index) => (
-              <div key={index} className="lg:m-20  md:h-[30rem] lg:h-[50rem]  ">
-                <img
-                  src={image}
-                  alt={`carousel-${currentItemIndex + 1}`}
-                  className="lg:h-[60rem]  h-[14rem] md:h-[25rem]  md:w-full sm:w-full"
-                />
-               
-                
-                </div>
-            
-            ))}
-          </Carousel>
-          
-        </div>
-      )}
+                  </div>
+                ))}
+              </Carousel>
+            </div>
+          )}
 
           {images.map((itemImages, itemIndex) => (
             <div
               key={itemIndex}
               className="cursor-pointer relative"
               onClick={() => handleImageClick(itemIndex, 0)}
-              
             >
               <img
                 src={itemImages[1]}
