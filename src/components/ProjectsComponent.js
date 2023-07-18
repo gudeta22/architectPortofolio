@@ -143,7 +143,7 @@ function ProjectsComponent() {
         handleClose();
       }
     };
-
+         
     const handleArrowKeys = (event) => {
       if (isOpen && currentItemIndex !== null) {
         if (event.keyCode === 37) {
