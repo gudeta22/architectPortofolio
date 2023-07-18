@@ -95,7 +95,7 @@ function Footer() {
           <div className="px-4 py-6 bg-transparent md:flex md:items-center md:justify-between my-6">
             <span className="text-sm text-gray-500  sm:text-center">
                <span>© {currentYear}</span>{" "}
-              <a href="/home" className="text-red-600 sr-only md:not-sr-only">
+              <a href="#" className="text-red-600 sr-only md:not-sr-only">
                 MisikrZewdu™
               </a>
               . All Rights Reserved.
