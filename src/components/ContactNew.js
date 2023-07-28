@@ -45,9 +45,9 @@ function ContactComponent() {
         </div>
       </div>
     </div>
-    <div className="flex  lg:w-[38rem] md:w-[38rem]   m-5 space-x-3 border p-5 lg:p-8 md:p-8 bg-gray-200">
+    <div className="flex w-[17rem]  lg:w-[38rem] md:w-[38rem]   m-5 space-x-3 border p-5 lg:p-8 md:p-8 bg-gray-200">
       <img src={mail} alt="" className="h-10 w-10 md:h-8 md:w-8 sm:w-5 sm:h-5" />
-      <div className="my-1 font-semibold fontstyle sm:text-sm lg:text-lg">
+      <div className="my-1 text-sm  font-semibold fontstyle sm:text-sm lg:text-lg">
         {Person.email}
       </div>
     </div>
