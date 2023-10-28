@@ -12,7 +12,7 @@ function NavProject() {
     >
       <div className=" w-auto flex justify-center items-center ">
         <div className="text-white text-3xl md:text-5xl font-bold font-style ">
-          <div className="fontstyle">PROJECTs</div>
+          <div className="fontstyle">PROJECTS</div>
         </div>
       </div>
     </div>
