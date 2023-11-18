@@ -19,12 +19,7 @@ function AboutPage() {
             We Create Architectural Masterpieces
           </h2>
           <p className="poppins font-normal text-[#686868]">
-            Peniel International Church's journey began in 2012 GC when a group
-            of visionary individuals recognized the need for a place where
-            people from various nations could come together in worship and
-            fellowship. From that moment, our church has continued to evolve,
-            embracing the rich tapestry of cultures and traditions that make up
-            our global congregation.
+            Misikir Zewdu Architects emerged in 2012 GC when a group of visionary individuals acknowledged the demand for a space where people from diverse nations could converge for architectural inspiration and collaboration. Since then, our firm has evolved, embracing the diverse tapestry of cultures and design traditions that enrich our global clientele. Committed to innovative and culturally sensitive architecture, we strive to create spaces that not only reflect the needs of our clients but also celebrate the unique aesthetics inherent in our worldwide community
           </p>
           <Link to="/about">
             <ButtonComponent title={"About Us"} />
